@@ -46,7 +46,31 @@
                 <i class="icon ion-social-github"></i>
             </a>
         {{ end }}
-        
+
+        {{ if .Site.Params.googleplus}}
+            <a href="https://plus.google.com/+{{ .Site.Params.googleplus }}" target="_blank">
+                <i class="icon ion-social-googleplus"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.youtube}}
+            <a href="https://www.youtube.com/{{ .Site.Params.youtube }}" target="_blank">
+                <i class="icon ion-social-youtube"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.steam}}
+            <a href="https://steamcommunity.com/id/{{ .Site.Params.steam }}" target="_blank">
+                <i class="icon ion-steam"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.facebook}}
+            <a href="https://www.facebook.com/{{ .Site.Params.facebook }}" target="_blank">
+                <i class="icon ion-social-facebook"></i>
+            </a>
+        {{ end }}
+
         {{ if .Site.Params.twitter }}
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
                 <i class="icon ion-social-twitter"></i>
@@ -56,6 +80,12 @@
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
                 <i class="icon ion-social-linkedin"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.twitch }}
+            <a href="https://www.twitch.tv/{{ .Site.Params.twitch }}" target="_blank">
+                <i class="icon ion-social-twitch"></i>
             </a>
         {{ end }}
 
