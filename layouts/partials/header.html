@@ -6,9 +6,9 @@
 <body lang="{{ .Site.Params.lang }}">
 
 {{ if .IsPage }}
-<section class="header"> 
+<section class="header">
 {{ else }}
-<section class="header header-home"> 
+<section class="header header-home">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.Params.logofile | absURL }}" /></a>
@@ -43,61 +43,73 @@
 
         {{ if .Site.Params.github }}
             <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github"></i>
+                <i class="fa fa-github fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.googleplus}}
             <a href="https://plus.google.com/+{{ .Site.Params.googleplus }}" target="_blank">
-                <i class="icon ion-social-googleplus"></i>
+                <i class="fa fa-google-plus-official fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.youtube}}
             <a href="https://www.youtube.com/{{ .Site.Params.youtube }}" target="_blank">
-                <i class="icon ion-social-youtube"></i>
+                <i class="fa fa-youtube-play fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.steam}}
             <a href="https://steamcommunity.com/id/{{ .Site.Params.steam }}" target="_blank">
-                <i class="icon ion-steam"></i>
+                <i class="fa fa-steam fa-lg"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.flickr}}
+            <a href="https://www.flickr.com/photos/{{ .Site.Params.flickr }}" target="_blank">
+                <i class="fa fa-flickr fa-lg"></i>
+            </a>
+        {{ end }}
+
+        {{ if .Site.Params.stackoverflow}}
+            <a href="https://stackoverflow.com/users/{{ .Site.Params.stackoverflow }}" target="_blank">
+                <i class="fa fa-stack-overflow fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.facebook}}
             <a href="https://www.facebook.com/{{ .Site.Params.facebook }}" target="_blank">
-                <i class="icon ion-social-facebook"></i>
+                <i class="fa fa-facebook fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.twitter }}
             <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter"></i>
+                <i class="fa fa-twitter fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
             <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin"></i>
+                <i class="fa fa-linkedin fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.twitch }}
             <a href="https://www.twitch.tv/{{ .Site.Params.twitch }}" target="_blank">
-                <i class="icon ion-social-twitch"></i>
+                <i class="fa fa-twitch fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.email }}
             <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger"></i>
+                <i class="fa fa-ios-email larger fa-lg"></i>
             </a>
         {{ end }}
 
         {{ if .Site.RSSLink }}
             <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger"></i>
+                <i class="fa fa-rss larger fa-lg"></i>
             </a>
         {{ end }}
         </div>

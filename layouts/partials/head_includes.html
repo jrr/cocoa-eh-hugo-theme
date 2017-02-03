@@ -1,5 +1,9 @@
 <!-- CSS -->
 
+{{ if .Site.Params.usefontawesome }}
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+{{end}}
+
 {{ if .Site.Params.highlightjs }}
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css">
 {{ end }}
