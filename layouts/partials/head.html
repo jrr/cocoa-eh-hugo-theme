@@ -9,6 +9,12 @@
     {{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Site.Title }} - {{ .Title }} {{ end }}
 {{ end }}
 </title>
-<link rel="canonical" href="{{ .Permalink }}">
+
+{{ if isset .Params "spin"}}
+    <link rel="canonical" href="{{ index .Params "spin" }}">
+{{ else }}
+    <link rel="canonical" href="{{ .Permalink }}">
+{{ end }}
+
 {{ partial "head_includes.html" . }}
 </head>
