@@ -444,6 +444,10 @@ div.main .container .content .post-item {
     display: flex;
     list-style: none;
 }
+.post-item {
+  margin: 1rem 0;
+
+}
 a {
   color: #428bca;
   -webkit-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
